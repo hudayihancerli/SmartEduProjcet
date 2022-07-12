@@ -8,7 +8,7 @@ const app = express();
 
 //connect db
 mongoose.connect('mongodb://localhost/smartedu-db').then(() => {
-    console.log('DB connected successfuly'); // sil
+    console.log('DB connected successfuly');
 });
 
 //template engine
@@ -16,6 +16,8 @@ app.set("view engine", "ejs");
 
 //Middlewares
 app.use(express.static("public"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 //routes
 app.use('/', pageRoute);
