@@ -1,5 +1,5 @@
 # Smart Education | [patika.dev Project link](https://app.patika.dev/courses/nodejs/SmarteduProject)
-.
+
 <!-- 100-199 Informational respones -->
 <!-- 200-299 Successful respones -->
 <!-- 300-399 Redirects -->
