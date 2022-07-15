@@ -40,4 +40,10 @@ exports.loginUser = async (req, res) => {
             error
         });
     }
+};
+
+exports.logoutUser = (req, res) => {
+    req.session.destroy(() => {
+        res.redirect('/');
+    })
 }
