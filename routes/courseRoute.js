@@ -5,7 +5,7 @@ const roleMiddleware = require('../middlewares/roleMiddleware')
 const router = express.Router();
 
 // http://localhost/courses
-router.route('/').post(roleMiddleware(["teacther", "admin"]), courseController.createCourse);
+router.route('/').post(roleMiddleware(["teacher", "admin"]), courseController.createCourse);
 router.route('/').get(courseController.getAllCourse);
 router.route('/:slug').get(courseController.getCourse);
 
